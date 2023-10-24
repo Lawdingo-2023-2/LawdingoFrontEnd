@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h2 class="titulo">User list</h2>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+          
+            <!-- IdUser Column -->
+            <ng-container matColumnDef="idUser">
+              <th mat-header-cell *matHeaderCellDef> idUser </th>
+              <td mat-cell *matCellDef="let element"> {{element.idUser}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <!-- Email Column -->
+            <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef> email </th>
+              <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+            </ng-container>
+          
+            <!-- Password Column -->
+            <ng-container matColumnDef="password">
+              <th mat-header-cell *matHeaderCellDef> password </th>
+              <td mat-cell *matCellDef="let element"> {{element.password}} </td>
+            </ng-container>
+
+            <!-- NumberPhone Column -->
+            <ng-container matColumnDef="numberPhone">
+                <th mat-header-cell *matHeaderCellDef>  numberPhone </th>
+                <td mat-cell *matCellDef="let element"> {{element.phone_num}} </td>
+            </ng-container>
+
+            <!-- DNI Column -->
+            <ng-container matColumnDef="DNI">
+                <th mat-header-cell *matHeaderCellDef> DNI </th>
+                <td mat-cell *matCellDef="let element"> {{element.dni}} </td>
+            </ng-container>  
+
+            <!-- Birthday Column -->
+            <ng-container matColumnDef="birthday">
+                <th mat-header-cell *matHeaderCellDef> birthday </th>
+                <td mat-cell *matCellDef="let element"> {{element.birthDay}} </td>
+            </ng-container>
+
+            <!-- Lawyer Column -->
+            <ng-container matColumnDef="lawyer">
+                <th mat-header-cell *matHeaderCellDef> lawyer </th>
+                <td mat-cell *matCellDef="let element"> {{element.lawyer}} </td>
+            </ng-container>
+
+            <!-- Username Column -->
+            <ng-container matColumnDef="username">
+                <th mat-header-cell *matHeaderCellDef> username </th>
+                <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+            </ng-container>
+
+            <!-- Enabled Column -->
+            <ng-container matColumnDef="enabled">
+                <th mat-header-cell *matHeaderCellDef> enabled </th>
+                <td mat-cell *matCellDef="let element"> {{element.enabled}} </td>
+            </ng-container>
+            
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+</body>
+</html>

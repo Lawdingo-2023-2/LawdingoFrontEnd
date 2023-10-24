@@ -1,0 +1,64 @@
+table {
+    width: 100%;
+  }
+
+.contenedor {
+    margin: 10px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.mat-column-idUser {
+    max-width: 80px;
+    width: 80px;
+    overflow: hidden;
+}
+.mat-column-name {
+    max-width: 130px;
+    width: 130px;
+    overflow: hidden;
+}
+.mat-column-email {
+    max-width: 180px;
+    width: 180px;
+    overflow: hidden;
+}
+.mat-column-password {
+    max-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.mat-column-numberPhone {
+    max-width: 130px;
+    width: 130px;
+    overflow: hidden;
+}
+.mat-column-DNI {
+    max-width: 110px;
+    width: 110px;
+    overflow: hidden;
+}
+.mat-column-birthday {
+    max-width: 120px;
+    width: 120px;
+    overflow: hidden;
+}
+.mat-column-lawyer {
+    max-width: 80px;
+    width: 80px;
+    overflow: hidden;
+}
+.mat-column-username {
+    max-width: 130px;
+    width: 130px;
+    overflow: hidden;
+}
+.mat-column-enabled {
+    max-width: 90px;
+    width: 90px;
+    overflow: hidden;
+}
